@@ -1,4 +1,4 @@
-# Warsztaty AI Agents z Gemini
+# Warsztaty AI Agents z Gemini :sparkles:
 
 ### Wymagania (do ogarnięcia przed warsztatami)
 - Python 3.10+
@@ -6,9 +6,9 @@
 - Konto założone na Google AI Studio
 
 ### Setup
-- [] Stwórz projekt i wygeneruj do niego klucz dostępu w [AI studio](https://aistudio.google.com/api-keys)
-- [] Uzupełnij plik `.env` swoim kluczem 
-- [] Pobierz niezbędne biblioteki
+- [ ] Stwórz projekt i wygeneruj do niego klucz dostępu w [AI studio](https://aistudio.google.com/api-keys)
+- [ ] Uzupełnij plik `.env` swoim kluczem 
+- [ ] Pobierz niezbędne biblioteki
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
