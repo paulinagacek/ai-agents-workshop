@@ -7,6 +7,7 @@ from google.genai import types
 
 from functions.get_files_info import get_files_info
 from functions.get_file_content import get_file_content
+from functions.write_file import write_file
 
 
 load_dotenv()
@@ -41,4 +42,4 @@ def main():
 
 if __name__ == "__main__":
     # main()
-    print(get_file_content(".", "utils.py"))
+    print(write_file(".", "test.txt", "Lorem ipsum"))
