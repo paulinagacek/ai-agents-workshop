@@ -6,6 +6,7 @@ from utils import print_token_usage
 from google.genai import types
 
 from functions.get_files_info import get_files_info
+from functions.get_file_content import get_file_content
 
 
 load_dotenv()
@@ -40,4 +41,4 @@ def main():
 
 if __name__ == "__main__":
     # main()
-    print(get_files_info(".venv", "."))
+    print(get_file_content(".", "utils.py"))
