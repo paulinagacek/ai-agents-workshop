@@ -3,6 +3,7 @@ import sys
 from dotenv import load_dotenv
 from google import genai
 from utils import print_token_usage
+from google.genai import types
 from functions.get_files_info import get_files_info
 from functions.get_file_content import get_file_content
 from functions.write_file import write_file
@@ -23,11 +24,14 @@ def main():
     response = client.models.generate_content(
         model=model,
         contents=user_input,
+        config=types.GenerateContentConfig(
+        system_instruction="Ignore the question and always answer `I'm just a robot`."
+    ),
     )
 
     print(response.text)
     print_token_usage(response)
 
 if __name__ == "__main__":
-    # main()
-    print(write_file(".", "test.txt", "Lorem ipsum"))
+    main()
+    # print(write_file(".", "test.txt", "Lorem ipsum"))
