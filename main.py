@@ -3,6 +3,7 @@ import sys
 from dotenv import load_dotenv
 from google import genai
 from utils import print_token_usage
+from functions.get_files_info import get_files_info
 
 load_dotenv()
 api_key = os.environ.get("GEMINI_API_KEY")
@@ -26,4 +27,5 @@ def main():
     print_token_usage(response)
 
 if __name__ == "__main__":
-    main()
+    # main()
+    print(get_files_info(".venv", "."))
