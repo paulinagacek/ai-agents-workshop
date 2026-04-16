@@ -4,7 +4,7 @@ from google import genai
 
 load_dotenv()
 api_key = os.environ.get("GEMINI_API_KEY")
-model = "gemini-2.5-flash"
+model = "gemini-2.5-pro"
 
 client = genai.Client(api_key=api_key)
 
